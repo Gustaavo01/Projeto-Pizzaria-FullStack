@@ -1,0 +1,135 @@
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #fff8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  color: #ff5f6d;
+}
+
+.container-cont,
+.container-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container-cont input,
+.container-cadastro input,
+.container-cadastro button {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.container-cont input:focus,
+.container-cadastro input:focus {
+  border-color: #ff5f6d;
+  box-shadow: 0 0 5px rgba(255, 95, 109, 0.3);
+}
+
+.container-cadastro button {
+  background-color: #ff5f6d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.container-cadastro button:hover {
+  background-color: #e04f5d;
+  transform: translateY(-1px);
+}
+
+.link-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-container a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+}
+
+.link-home {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.link-home a {
+  padding: 12px 20px;
+  background-color: #8f8f8f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.link-home a:hover {
+  background-color: #e04f5d;
+  transform: translateY(-1px);
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.icoon-cadastro {
+  color: #ff5f6d;
+  font-size: 32px;
+}
+
+.container-cadastro a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .container-cont,
+  .container-cadastro {
+    max-width: 100%;
+  }
+  .link-home {
+    padding-left: 10px;
+  }
+}

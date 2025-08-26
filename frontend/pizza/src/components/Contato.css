@@ -1,0 +1,116 @@
+.contato-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contato-voltar-topo {
+  margin-bottom: 1rem;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #d35400;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #e67e22;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  font-size: 2rem;
+}
+
+.contato-subtitulo {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contato-card {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.contato-card:hover {
+  transform: translateY(-5px);
+}
+
+.contato-icone {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #d35400;
+}
+
+.contato-icone.whatsapp {
+  color: #25d366;
+}
+
+@media (max-width: 900px) {
+  .contato-info {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-container {
+    padding: 1rem;
+  }
+
+  .contato-subtitulo {
+    font-size: 1rem;
+  }
+
+  .btn-voltar {
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contato-card {
+    padding: 1rem;
+  }
+
+  .contato-icone {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contato-info {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .contato-card {
+    padding: 0.8rem;
+  }
+
+  .contato-icone {
+    font-size: 1.3rem;
+  }
+}

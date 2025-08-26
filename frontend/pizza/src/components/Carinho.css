@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carrinho-container {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 40px;
+  background-color: #fff8f0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrinho-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
+
+.carrinho-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #ffe6d1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.carrinho-item:hover {
+  transform: scale(1.02);
+}
+
+.item-nome {
+  font-weight: bold;
+}
+
+.item-quantidade {
+  font-style: italic;
+  color: #555;
+}
+
+.item-preco {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.carrinho-total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 18px;
+  color: #d32f2f;
+}
+
+.btn-remover {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-remover:hover {
+  background-color: #a30d0d;
+}
+
+.btn-pagamento {
+  display: flex;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #26c710, #1b9c37);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-pagamento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.btn-pagamento:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+strong {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.btn-back a {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px 0px;
+  border-radius: 6px;
+  background: #f2f2f2;
+  transition: background 0.2s;
+}
+
+.btn-back a:hover {
+  background: #e0e0e0;
+}
